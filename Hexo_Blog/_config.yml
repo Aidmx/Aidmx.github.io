@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Z4Blog
 subtitle: ''
-description: ''
+description: '这是博客'
 keywords:
-author: John Doe
-language: en
+author: Allen
+language: zh-CN
 timezone: ''
 
 # URL
