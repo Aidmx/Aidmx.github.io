@@ -36,6 +36,7 @@ example:
 
 ### CLASSES 段
 包含应用程序定义的类的信息，这些类的实例出现在数据库的 BLOCKS、ENTITIES 和 OBJECTS 段中。类定义在类的层次结构中是固定不变的。
+
 ```
 0
 SECTION
@@ -59,8 +60,8 @@ CLASS
 
 0
 ENDSEC            CLASSES 段的结束
-```
-```
+
+实例
 CLASSES 
 0                 classes 段 开始从这里开始
 CLASS
