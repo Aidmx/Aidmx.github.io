@@ -66,9 +66,9 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-DXF-理解各个段" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-DXF-理解" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/06/14/DXF-%E7%90%86%E8%A7%A3%E5%90%84%E4%B8%AA%E6%AE%B5/" class="article-date">
+    <a href="/2020/06/14/DXF-%E7%90%86%E8%A7%A3/" class="article-date">
   <time datetime="2020-06-14T11:47:19.000Z" itemprop="datePublished">2020-06-14</time>
 </a>
     
@@ -80,7 +80,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/14/DXF-%E7%90%86%E8%A7%A3%E5%90%84%E4%B8%AA%E6%AE%B5/">DXF-理解各个段</a>
+      <a class="article-title" href="/2020/06/14/DXF-%E7%90%86%E8%A7%A3/">DXF-理解</a>
     </h1>
   
 
@@ -94,11 +94,9 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">example:</span><br><span class="line">    HEADER</span><br><span class="line">    9</span><br><span class="line">    $LASTSAVEDBY</span><br><span class="line">      1</span><br><span class="line">    allen</span><br></pre></td></tr></table></figure>
 <p>这一段的意思代表，Header 段中，9代表开始 $LASTSAVEDBY 代表类型’最后保存被XXX’ 组码为1 内容 allen 这一段意思是 最后被 allen 保存</p>
 <h3 id="CLASSES-段"><a href="#CLASSES-段" class="headerlink" title="CLASSES 段"></a>CLASSES 段</h3><p>包含应用程序定义的类的信息，这些类的实例出现在数据库的 BLOCKS、ENTITIES 和 OBJECTS 段中。类定义在类的层次结构中是固定不变的。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">0</span><br><span class="line">SECTION</span><br><span class="line">2</span><br><span class="line">CLASSES         CLASSES 段的开始</span><br><span class="line"></span><br><span class="line">0               为每个条目重复一次</span><br><span class="line">CLASS</span><br><span class="line">1</span><br><span class="line">&lt;类 dxf 记录&gt;</span><br><span class="line">2</span><br><span class="line">&lt;类名&gt;</span><br><span class="line">3</span><br><span class="line">&lt;应用程序名&gt;</span><br><span class="line">90</span><br><span class="line">&lt;标志&gt;</span><br><span class="line">280</span><br><span class="line">&lt;标志&gt;</span><br><span class="line">281</span><br><span class="line">&lt;标志&gt;</span><br><span class="line"></span><br><span class="line">0</span><br><span class="line">ENDSEC CLASSES 段的结束</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">0</span><br><span class="line">SECTION</span><br><span class="line">2</span><br><span class="line">CLASSES         CLASSES 段的开始</span><br><span class="line"></span><br><span class="line">0               为每个条目重复一次</span><br><span class="line">CLASS</span><br><span class="line">1</span><br><span class="line">&lt;类 dxf 记录&gt;</span><br><span class="line">2</span><br><span class="line">&lt;类名&gt;</span><br><span class="line">3</span><br><span class="line">&lt;应用程序名&gt;</span><br><span class="line">90</span><br><span class="line">&lt;标志&gt;</span><br><span class="line">280</span><br><span class="line">&lt;标志&gt;</span><br><span class="line">281</span><br><span class="line">&lt;标志&gt;</span><br><span class="line"></span><br><span class="line">0</span><br><span class="line">ENDSEC            CLASSES 段的结束</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">CLASSES </span><br><span class="line">0                 classes 段 开始从这里开始</span><br><span class="line">CLASS</span><br><span class="line"> 1                类 DXF 记录名；始终唯一</span><br><span class="line">ACDBDICTIONARYWDFLT</span><br><span class="line"> 2                C++ 类名，始终唯一 </span><br><span class="line">AcDbDictionaryWithDefault</span><br><span class="line"> 3                应用程序名。当前未加载本段列出的某个类定义时出现在“警告”框中</span><br><span class="line">ObjectDBX Classes</span><br><span class="line">90                代理功能标志。指示该对象作为代理时的功能</span><br><span class="line">       0          不允许操作 (0)</span><br><span class="line">91                自定义类的实例计数</span><br><span class="line">      1</span><br><span class="line">280               &quot;是代理&quot;标志。如果创建此 DXF 文件时未加载类，则设定为 1，否则设定为 0</span><br><span class="line">   0</span><br><span class="line">281               &quot;是图元&quot;标志。如果类从 AcDbEntity 类派生并可能位于 BLOCKS 或 ENTITIES 段中，则设定为 1。如果设定为 0，则实例可能仅出现在 OBJECTS 段中</span><br><span class="line">   0</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>CLASSES<br>0     classes 段 开始从这里开始<br>CLASS<br> 1       类 DXF 记录名；始终唯一<br>ACDBDICTIONARYWDFLT<br> 2       C++ 类名，始终唯一<br>AcDbDictionaryWithDefault<br> 3        应用程序名。当前未加载本段列出的某个类定义时出现在“警告”框中<br>ObjectDBX Classes<br>90            代理功能标志。指示该对象作为代理时的功能<br>       0      不允许操作 (0)<br>91            自定义类的实例计数<br>      1<br>280           “是代理”标志。如果创建此 DXF 文件时未加载类，则设定为 1，否则设定为 0<br>   0<br>281           “是图元”标志。如果类从 AcDbEntity 类派生并可能位于 BLOCKS 或 ENTITIES 段中，则设定为 1。如果设定为 0，则实例可能仅出现在 OBJECTS 段中<br>   0</p>
-</blockquote>
 <h3 id="TABLES-段"><a href="#TABLES-段" class="headerlink" title="TABLES 段"></a>TABLES 段</h3><p>这里包含很多种table 表，表的次序是可以更改的，但是 LTYPE 表总是位于 LAYER 表之前。每个表都由带有 TABLE 标签的 0 组码引入。<br>图形中的表可以包含已删除的项目，但这些项目并不写入 DXF 文件。这样，<strong><em>表标题后面的表条目可能少于 70 组码指示的数目，因此不要使用 70 组码中的计数作为索引在表中执行读取操作。</em></strong><br>提供此组码是为了使读取 DXF 文件的程序能够分配足以容纳其后的全部表条目的数组。</p>
 <p><strong><em>每个表的结尾由 0 组指定，组值为 ENDTAB。</em></strong><br>包含以下符号表的定义：</p>
 <ul>
@@ -114,10 +112,9 @@
 <li>VPORT（视口配置表）</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">0</span><br><span class="line">SECTION</span><br><span class="line">2</span><br><span class="line">TABLES          TABLES 段的开始</span><br><span class="line"></span><br><span class="line">0               通用表组码；为每个条目重复一次</span><br><span class="line">TABLE</span><br><span class="line">2</span><br><span class="line">&lt;表类型&gt;</span><br><span class="line">5</span><br><span class="line">&lt;句柄&gt;</span><br><span class="line">100</span><br><span class="line">AcDbSymbolTable</span><br><span class="line">70</span><br><span class="line">&lt;最大条目数量&gt;</span><br><span class="line">0               表条目数据；为每个表记录重复一次    </span><br><span class="line">&lt;表类型&gt;</span><br><span class="line">5</span><br><span class="line">&lt;句柄&gt;</span><br><span class="line">100</span><br><span class="line">AcDbSymbolTableRecord</span><br><span class="line">.</span><br><span class="line">. &lt;数据&gt;</span><br><span class="line">.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">0</span><br><span class="line">ENDTAB           表的结束</span><br><span class="line"></span><br><span class="line">0</span><br><span class="line">ENDSEC           TABLES 段的结束</span><br></pre></td></tr></table></figure>
-<p><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WS1a9193826455f5ff18cb41610ec0a2e719-7961.htm" target="_blank" rel="noopener">Example</a></p>
-<p><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WSfacf1429558a55de185c428100849a0ab7-5e1a.htm" target="_blank" rel="noopener">TABLES段 DOC</a></p>
-<h3 id="BLOCKS-段"><a href="#BLOCKS-段" class="headerlink" title="BLOCKS 段"></a>BLOCKS 段</h3><p>包含构成图形中每个块参照的块定义和图形图元。BLOCKS 段中的所有图元都出现在 BLOCK 和 ENDBLK 图元之间。BLOCK 和 ENDBLK 图元仅出现在 BLOCKS 段。尽管块定义可以包含插入图元，但不允许嵌套块定义（即 <strong><em>BLOCK 和 ENDBLK 图元之间不允许出现另一对 BLOCK 和 ENDBLK 图元</em></strong>）。<br><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WS1a9193826455f5ff18cb41610ec0a2e719-795f.htm" target="_blank" rel="noopener">Example</a><br><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WSfacf1429558a55de185c428100849a0ab7-5e01.htm" target="_blank" rel="noopener">BLOCKS DOC</a></p>
-<h3 id="ENTITIES-段"><a href="#ENTITIES-段" class="headerlink" title="ENTITIES 段"></a>ENTITIES 段</h3><p>包含图形中的图形对象（图元），其中包括块参照（插入图元）。<br><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WS1a9193826455f5ff18cb41610ec0a2e719-795d.htm" target="_blank" rel="noopener">Example</a></p>
+<p><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WS1a9193826455f5ff18cb41610ec0a2e719-7961.htm" target="_blank" rel="noopener">Example</a><br><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WSfacf1429558a55de185c428100849a0ab7-5e1a.htm" target="_blank" rel="noopener">TABLES段 DOC</a></p>
+<h3 id="BLOCKS-段"><a href="#BLOCKS-段" class="headerlink" title="BLOCKS 段"></a>BLOCKS 段</h3><p><strong><em>块段</em></strong>包含构成图形中每个块参照的块定义和图形图元。BLOCKS 段中的所有图元都出现在 BLOCK 和 ENDBLK 图元之间。BLOCK 和 ENDBLK 图元仅出现在 BLOCKS 段。尽管块定义可以包含插入图元，但不允许嵌套块定义（即 <strong><em>BLOCK 和 ENDBLK 图元之间不允许出现另一对 BLOCK 和 ENDBLK 图元</em></strong>）。<br><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WS1a9193826455f5ff18cb41610ec0a2e719-795f.htm" target="_blank" rel="noopener">Example</a><br><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WSfacf1429558a55de185c428100849a0ab7-5e01.htm" target="_blank" rel="noopener">BLOCKS DOC</a></p>
+<h3 id="ENTITIES-段"><a href="#ENTITIES-段" class="headerlink" title="ENTITIES 段"></a>ENTITIES 段</h3><p><strong><em>图元段</em></strong>包含图形中的图形对象（图元），其中包括块参照（插入图元）。<br><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WS1a9193826455f5ff18cb41610ec0a2e719-795d.htm" target="_blank" rel="noopener">Example</a></p>
 <h3 id="OBJECTS-段"><a href="#OBJECTS-段" class="headerlink" title="OBJECTS 段"></a>OBJECTS 段</h3><p>包含图形中的非图形对象。除图元、符号表记录以及符号表以外的所有对象都存储在此段。OBJECTS 段中的条目样例是包含多线样式和组的词典。<br><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WS1a9193826455f5ff18cb41610ec0a2e719-795b.htm" target="_blank" rel="noopener">Example</a></p>
 <h3 id="THUMBNAILIMAGE-段"><a href="#THUMBNAILIMAGE-段" class="headerlink" title="THUMBNAILIMAGE 段"></a>THUMBNAILIMAGE 段</h3><p>包含图形的预览图像数据。此段为可选。</p>
 <hr>
@@ -126,7 +123,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/14/DXF-%E7%90%86%E8%A7%A3%E5%90%84%E4%B8%AA%E6%AE%B5/" data-id="ckbgk8nm10005dgv9f9i7bwit" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/06/14/DXF-%E7%90%86%E8%A7%A3/" data-id="ckbgkiyla000194v9gzrrdmek" class="article-share-link">Share</a>
       
       
     </footer>
@@ -185,7 +182,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/03/DXF-%E5%88%9D%E6%8E%A2/" data-id="ckbgk8nll0000dgv93cwa4gf1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/06/03/DXF-%E5%88%9D%E6%8E%A2/" data-id="ckbgkiyl4000094v9f5le31u1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DXF/" rel="tag">DXF</a></li></ul>
@@ -249,7 +246,7 @@
       <ul>
         
           <li>
-            <a href="/2020/06/14/DXF-%E7%90%86%E8%A7%A3%E5%90%84%E4%B8%AA%E6%AE%B5/">DXF-理解各个段</a>
+            <a href="/2020/06/14/DXF-%E7%90%86%E8%A7%A3/">DXF-理解</a>
           </li>
         
           <li>
