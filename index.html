@@ -116,8 +116,58 @@
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">0</span><br><span class="line">SECTION</span><br><span class="line">2</span><br><span class="line">TABLES          TABLES 段的开始</span><br><span class="line"></span><br><span class="line">0               通用表组码；为每个条目重复一次</span><br><span class="line">TABLE</span><br><span class="line">2</span><br><span class="line">&lt;表类型&gt;</span><br><span class="line">5</span><br><span class="line">&lt;句柄&gt;</span><br><span class="line">100</span><br><span class="line">AcDbSymbolTable</span><br><span class="line">70</span><br><span class="line">&lt;最大条目数量&gt;</span><br><span class="line">0               表条目数据；为每个表记录重复一次    </span><br><span class="line">&lt;表类型&gt;</span><br><span class="line">5</span><br><span class="line">&lt;句柄&gt;</span><br><span class="line">100</span><br><span class="line">AcDbSymbolTableRecord</span><br><span class="line">.</span><br><span class="line">. &lt;数据&gt;</span><br><span class="line">.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">0</span><br><span class="line">ENDTAB           表的结束</span><br><span class="line"></span><br><span class="line">0</span><br><span class="line">ENDSEC           TABLES 段的结束</span><br></pre></td></tr></table></figure>
 <p><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WS1a9193826455f5ff18cb41610ec0a2e719-7961.htm" target="_blank" rel="noopener">Example</a><br><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WSfacf1429558a55de185c428100849a0ab7-5e1a.htm" target="_blank" rel="noopener">TABLES段 DOC</a></p>
-<h3 id="BLOCKS-段"><a href="#BLOCKS-段" class="headerlink" title="BLOCKS 段"></a>BLOCKS 段</h3><p><strong><em>块段</em></strong>包含构成图形中每个块参照的块定义和图形图元。BLOCKS 段中的所有图元都出现在 BLOCK 和 ENDBLK 图元之间。BLOCK 和 ENDBLK 图元仅出现在 BLOCKS 段。尽管块定义可以包含插入图元，但不允许嵌套块定义（即 <strong><em>BLOCK 和 ENDBLK 图元之间不允许出现另一对 BLOCK 和 ENDBLK 图元</em></strong>）。<br><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WS1a9193826455f5ff18cb41610ec0a2e719-795f.htm" target="_blank" rel="noopener">Example</a><br><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WSfacf1429558a55de185c428100849a0ab7-5e01.htm" target="_blank" rel="noopener">BLOCKS DOC</a></p>
-<h3 id="ENTITIES-段"><a href="#ENTITIES-段" class="headerlink" title="ENTITIES 段"></a>ENTITIES 段</h3><p><strong><em>图元段</em></strong>包含图形中的图形对象（图元），其中包括块参照（插入图元）。<br><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WS1a9193826455f5ff18cb41610ec0a2e719-795d.htm" target="_blank" rel="noopener">Example</a></p>
+<h3 id="BLOCKS-段"><a href="#BLOCKS-段" class="headerlink" title="BLOCKS 段"></a>BLOCKS 段</h3><p><strong><em>块段</em></strong> 包含构成图形中每个块参照的块定义和图形图元。BLOCKS 段中的所有图元都出现在 BLOCK 和 ENDBLK 图元之间。BLOCK 和 ENDBLK 图元仅出现在 BLOCKS 段。尽管块定义可以包含插入图元，但不允许嵌套块定义（即 <strong><em>BLOCK 和 ENDBLK 图元之间不允许出现另一对 BLOCK 和 ENDBLK 图元</em></strong>）。<br><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WS1a9193826455f5ff18cb41610ec0a2e719-795f.htm" target="_blank" rel="noopener">Example</a><br><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WSfacf1429558a55de185c428100849a0ab7-5e01.htm" target="_blank" rel="noopener">BLOCKS DOC</a></p>
+<h3 id="ENTITIES-段"><a href="#ENTITIES-段" class="headerlink" title="ENTITIES 段"></a>ENTITIES 段</h3><p><strong><em>图元段</em></strong> 包含图形中的图形对象（图元），其中包括块参照（插入图元）。</p>
+<ul>
+<li>通用图元组码</li>
+<li>3DFACE</li>
+<li>3DSOLID</li>
+<li>ACAD_PROXY_ENTITY</li>
+<li>ARC</li>
+<li>ATTDEF</li>
+<li>ATTRIB</li>
+<li>BODY</li>
+<li>CIRCLE</li>
+<li>DIMENSION</li>
+<li>ELLIPSE</li>
+<li>HATCH</li>
+<li>HELIX</li>
+<li>IMAGE</li>
+<li>INSERT</li>
+<li>LEADER</li>
+<li>LIGHT</li>
+<li>LINE</li>
+<li>LWPOLYLINE</li>
+<li>MESH</li>
+<li>MLINE</li>
+<li>MLEADERSTYLE</li>
+<li>MLEADER</li>
+<li>MTEXT</li>
+<li>OLEFRAME</li>
+<li>OLE2FRAME</li>
+<li>POINT</li>
+<li>POLYLINE</li>
+<li>RAY</li>
+<li>REGION</li>
+<li>SECTION</li>
+<li>SEQEND</li>
+<li>SHAPE</li>
+<li>SOLID</li>
+<li>SPLINE</li>
+<li>SUN</li>
+<li>SURFACE</li>
+<li>TABLE</li>
+<li>TEXT</li>
+<li>TOLERANCE</li>
+<li>TRACE</li>
+<li>UNDERLAY</li>
+<li>VERTEX</li>
+<li>VIEWPORT</li>
+<li>WIPEOUT</li>
+<li>XLINE</li>
+</ul>
+<p><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WS1a9193826455f5ff18cb41610ec0a2e719-795d.htm" target="_blank" rel="noopener">Example</a></p>
+<p><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WSfacf1429558a55de185c428100849a0ab7-5df0.htm" target="_blank" rel="noopener">ECTITIES DOC</a></p>
 <h3 id="OBJECTS-段"><a href="#OBJECTS-段" class="headerlink" title="OBJECTS 段"></a>OBJECTS 段</h3><p>包含图形中的非图形对象。除图元、符号表记录以及符号表以外的所有对象都存储在此段。OBJECTS 段中的条目样例是包含多线样式和组的词典。<br><a href="http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WS1a9193826455f5ff18cb41610ec0a2e719-795b.htm" target="_blank" rel="noopener">Example</a></p>
 <h3 id="THUMBNAILIMAGE-段"><a href="#THUMBNAILIMAGE-段" class="headerlink" title="THUMBNAILIMAGE 段"></a>THUMBNAILIMAGE 段</h3><p>包含图形的预览图像数据。此段为可选。</p>
 <hr>
@@ -126,7 +176,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/14/DXF-%E7%90%86%E8%A7%A3/" data-id="ckbgkryyq00016ov99gorcyir" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/06/14/DXF-%E7%90%86%E8%A7%A3/" data-id="cke56yx8j0001csv95nl93cqi" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DXF/" rel="tag">DXF</a></li></ul>
@@ -187,7 +237,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/03/DXF-%E5%88%9D%E6%8E%A2/" data-id="ckbgkryyl00006ov9854914sz" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/06/03/DXF-%E5%88%9D%E6%8E%A2/" data-id="cke56yx8e0000csv9h3qt8sez" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DXF/" rel="tag">DXF</a></li></ul>
