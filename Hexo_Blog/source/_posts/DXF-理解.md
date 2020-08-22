@@ -139,16 +139,69 @@ ENDSEC           TABLES 段的结束
 [TABLES段 DOC](http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WSfacf1429558a55de185c428100849a0ab7-5e1a.htm)
 
 ### BLOCKS 段
-***块段***包含构成图形中每个块参照的块定义和图形图元。BLOCKS 段中的所有图元都出现在 BLOCK 和 ENDBLK 图元之间。BLOCK 和 ENDBLK 图元仅出现在 BLOCKS 段。尽管块定义可以包含插入图元，但不允许嵌套块定义（即 ***BLOCK 和 ENDBLK 图元之间不允许出现另一对 BLOCK 和 ENDBLK 图元***）。
+***块段*** 包含构成图形中每个块参照的块定义和图形图元。BLOCKS 段中的所有图元都出现在 BLOCK 和 ENDBLK 图元之间。BLOCK 和 ENDBLK 图元仅出现在 BLOCKS 段。尽管块定义可以包含插入图元，但不允许嵌套块定义（即 ***BLOCK 和 ENDBLK 图元之间不允许出现另一对 BLOCK 和 ENDBLK 图元***）。
 [Example](http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WS1a9193826455f5ff18cb41610ec0a2e719-795f.htm)
 [BLOCKS DOC](http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WSfacf1429558a55de185c428100849a0ab7-5e01.htm)
 
 ### ENTITIES 段
-***图元段***包含图形中的图形对象（图元），其中包括块参照（插入图元）。
+***图元段*** 包含图形中的图形对象（图元），其中包括块参照（插入图元）。
+
+- 通用图元组码
+- 3DFACE
+- 3DSOLID
+- ACAD_PROXY_ENTITY
+- ARC
+- ATTDEF
+- ATTRIB
+- BODY
+- CIRCLE
+- DIMENSION
+- ELLIPSE
+- HATCH
+- HELIX
+- IMAGE
+- INSERT
+- LEADER
+- LIGHT
+- LINE
+- LWPOLYLINE
+- MESH
+- MLINE
+- MLEADERSTYLE
+- MLEADER
+- MTEXT
+- OLEFRAME
+- OLE2FRAME
+- POINT
+- POLYLINE
+- RAY
+- REGION
+- SECTION
+- SEQEND
+- SHAPE
+- SOLID
+- SPLINE
+- SUN
+- SURFACE
+- TABLE
+- TEXT
+- TOLERANCE
+- TRACE
+- UNDERLAY
+- VERTEX
+- VIEWPORT
+- WIPEOUT
+- XLINE
+
+
 [Example](http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WS1a9193826455f5ff18cb41610ec0a2e719-795d.htm)
+
+[ECTITIES DOC](http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WSfacf1429558a55de185c428100849a0ab7-5df0.htm)
+
 ### OBJECTS 段
 包含图形中的非图形对象。除图元、符号表记录以及符号表以外的所有对象都存储在此段。OBJECTS 段中的条目样例是包含多线样式和组的词典。
 [Example](http://docs.autodesk.com/ACD/2011/CHS/filesDXF/WS1a9193826455f5ff18cb41610ec0a2e719-795b.htm)
+
 ### THUMBNAILIMAGE 段
 包含图形的预览图像数据。此段为可选。
 
